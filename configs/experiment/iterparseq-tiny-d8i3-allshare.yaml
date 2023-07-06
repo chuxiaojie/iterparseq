@@ -1,0 +1,13 @@
+# @package _global_
+defaults:
+  - override /model: iterparseq
+
+model:
+  name: parseq_iter-tiny-d8i3-allshare
+  embed_dim: 192
+  enc_num_heads: 3
+  dec_num_heads: 6
+  enc_depth: 8
+  enc_num_iters: 3
+  shared_encoder: true
+  enc_shared_connection: true

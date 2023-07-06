@@ -1,0 +1,27 @@
+name: itervm
+_target_: strhub.models.abinet.system.IterVM
+
+# Shared Transformer configuration
+d_model: 384
+nhead: 12
+d_inner: 1536
+activation: gelu
+dropout: 0.1
+
+num_iters: 2
+share_weights: false
+deep_supervision: true
+
+resnet_kwargs:
+  layers: [2,2,3,3,2]
+
+# Architecture
+v_backbone: transformer
+v_num_layers: 3
+v_attention: position
+v_attention_mode: nearest
+
+
+# Training
+lr: 3.4e-4
+v_loss_weight: 1.

@@ -1,0 +1,31 @@
+name: parseq_iter2
+_target_: strhub.models.parseqv2.system.IterPARSeq
+
+# Data
+patch_size: [ 4, 8 ]  # [ height, width ]
+
+# Architecture
+embed_dim: 384
+enc_num_heads: 6
+enc_mlp_ratio: 4
+enc_depth: 6
+dec_num_heads: 12
+dec_mlp_ratio: 4
+dec_depth: 1
+embed_kwargs:
+  type: PatchEmbed
+
+enc_num_iters: 2
+enc_shared_connection: false
+shared_encoder: true
+
+# Training
+lr: 7e-4
+perm_num: 6
+perm_forward: true
+perm_mirrored: true
+dropout: 0.1
+
+# Decoding mode (test)
+decode_ar: true
+refine_iters: 1

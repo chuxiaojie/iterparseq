@@ -1,0 +1,9 @@
+# @package _global_
+defaults:
+  - override /model: parseq
+
+model:
+  name: parseq_dim512
+  embed_dim: 512
+  enc_num_heads: 8
+  dec_num_heads: 16

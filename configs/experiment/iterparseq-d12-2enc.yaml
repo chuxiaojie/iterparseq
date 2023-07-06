@@ -1,0 +1,9 @@
+# @package _global_
+defaults:
+  - override /model: iterparseq
+
+model:
+  name: parseq_iter-d12-2enc
+  enc_depth: 12
+  enc_num_iters: 2
+  shared_encoder: false

@@ -1,0 +1,8 @@
+# @package _global_
+defaults:
+  - override /model: iterparseq
+
+model:
+  name: parseq_iter2-d8i2
+  enc_depth: 8
+  enc_num_iters: 2

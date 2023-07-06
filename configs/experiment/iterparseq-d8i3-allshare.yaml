@@ -1,0 +1,10 @@
+# @package _global_
+defaults:
+  - override /model: iterparseq
+
+model:
+  name: parseq_iter-d8i3-allshare
+  enc_depth: 8
+  enc_num_iters: 3
+  shared_encoder: true
+  enc_shared_connection: true

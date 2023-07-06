@@ -1,0 +1,25 @@
+
+./test.py $1 refine_iters:int=0 decode_ar:bool=false  enc_num_iters:int=1 --tag _1n0 --new
+./test.py $1 refine_iters:int=1 decode_ar:bool=false  enc_num_iters:int=1 --tag _1n1 --new
+./test.py $1 refine_iters:int=2 decode_ar:bool=false  enc_num_iters:int=1 --tag _1n2 --new
+./test.py $1 refine_iters:int=3 decode_ar:bool=false  enc_num_iters:int=1 --tag _1n3 --new
+./test.py $1 refine_iters:int=0 decode_ar:bool=false  enc_num_iters:int=2 --tag _2n0 --new
+./test.py $1 refine_iters:int=1 decode_ar:bool=false  enc_num_iters:int=2 --tag _2n1 --new
+./test.py $1 refine_iters:int=2 decode_ar:bool=false  enc_num_iters:int=2 --tag _2n2 --new
+./test.py $1 refine_iters:int=3 decode_ar:bool=false  enc_num_iters:int=2 --tag _2n3 --new
+./test.py $1 refine_iters:int=0 decode_ar:bool=false  enc_num_iters:int=3 --tag _3n0 --new
+./test.py $1 refine_iters:int=1 decode_ar:bool=false  enc_num_iters:int=3 --tag _3n1 --new
+./test.py $1 refine_iters:int=2 decode_ar:bool=false  enc_num_iters:int=3 --tag _3n2 --new
+./test.py $1 refine_iters:int=3 decode_ar:bool=false  enc_num_iters:int=3 --tag _3n3 --new
+./test.py $1 refine_iters:int=0 decode_ar:bool=true  enc_num_iters:int=1 --tag _1a0 --new
+./test.py $1 refine_iters:int=1 decode_ar:bool=true  enc_num_iters:int=1 --tag _1a1 --new
+./test.py $1 refine_iters:int=2 decode_ar:bool=true  enc_num_iters:int=1 --tag _1a2 --new
+./test.py $1 refine_iters:int=3 decode_ar:bool=true  enc_num_iters:int=1 --tag _1a3 --new
+./test.py $1 refine_iters:int=0 decode_ar:bool=true  enc_num_iters:int=2 --tag _2a0 --new
+./test.py $1 refine_iters:int=1 decode_ar:bool=true  enc_num_iters:int=2 --tag _2a1 --new
+./test.py $1 refine_iters:int=2 decode_ar:bool=true  enc_num_iters:int=2 --tag _2a2 --new
+./test.py $1 refine_iters:int=3 decode_ar:bool=true  enc_num_iters:int=2 --tag _2a3 --new
+./test.py $1 refine_iters:int=0 decode_ar:bool=true  enc_num_iters:int=3 --tag _3a0 --new
+./test.py $1 refine_iters:int=1 decode_ar:bool=true  enc_num_iters:int=3 --tag _3a1 --new
+./test.py $1 refine_iters:int=2 decode_ar:bool=true  enc_num_iters:int=3 --tag _3a2 --new
+./test.py $1 refine_iters:int=3 decode_ar:bool=true  enc_num_iters:int=3 --tag _3a3 --new

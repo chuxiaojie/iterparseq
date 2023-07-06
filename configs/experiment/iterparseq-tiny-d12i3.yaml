@@ -1,0 +1,11 @@
+# @package _global_
+defaults:
+  - override /model: iterparseq
+
+model:
+  name: parseq_iter2-tiny-d12i3
+  embed_dim: 192
+  enc_num_heads: 3
+  dec_num_heads: 6
+  enc_depth: 12
+  enc_num_iters: 3

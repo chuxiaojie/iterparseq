@@ -1,0 +1,11 @@
+# @package _global_
+model:
+  img_size: [ 32, 192 ]
+  max_label_length: 40
+
+data:
+  train_dir: '.'
+  root_dir: data/chinese
+
+trainer:
+  max_epochs: 200

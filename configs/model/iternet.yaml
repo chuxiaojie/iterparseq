@@ -1,0 +1,33 @@
+name: iternet
+_target_: strhub.models.abinet.system.IterNet
+
+# Shared Transformer configuration
+d_model: 512
+nhead: 8
+d_inner: 2048
+activation: relu
+dropout: 0.1
+
+# Architecture
+v_backbone: transformer
+v_num_layers: 3
+v_attention: position
+v_attention_mode: nearest
+l_num_layers: 4
+l_use_self_attn: false
+
+num_iters: 2
+share_weights: false
+deep_supervision: true
+resnet_kwargs:
+  layers: [2,2,3,3,2]
+
+
+# Training
+lr: 3.4e-4
+l_lr: 3e-4
+iter_size: 3
+a_loss_weight: 1.
+v_loss_weight: 1.
+l_loss_weight: 1.
+l_detach: true

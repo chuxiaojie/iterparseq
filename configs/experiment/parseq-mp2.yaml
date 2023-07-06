@@ -1,0 +1,16 @@
+# @package _global_
+defaults:
+  - override /model: parseq
+
+model:
+  name: parseq_iter1-4x8-4x4
+  _target_: strhub.models.parseqv2.system.IterPARSeq
+  patch_size: [[4,8], [4,4]]
+  enc_num_iters: 1
+  enc_shared_connection: false
+  shared_encoder: true
+
+  embed_kwargs:
+    type: MultiPatchEmbed
+    norm_layer: LayerNorm
+    default_patch_size: [4,8]
